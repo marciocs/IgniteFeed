@@ -25,8 +25,15 @@ export function Post(){
           <a href=''>#ignite</a>{' '}
           <a href=''>#rocket</a>
         </p>
-
       </div>
+
+      <form className={styles.commentForm}>
+        <strong>Deixe o seu feed</strong>
+
+        <textarea placeholder="Deixe o seu comentário"></textarea>
+
+        <button type="submit" ></button>
+      </form>
     </article>
   );
 }

@@ -38,7 +38,7 @@ const posts = [
   {
     id:3,
     author:{
-      avatarUrl:'https://github.com/maykbrito',
+      avatarUrl:'https://github.com/maykbrito.png',
       name:'Mayk Brito',
       role: 'Educator Rocketseat'
     },
@@ -63,7 +63,15 @@ const posts = [
           <Sidebar />
         
         <main>
-          <Post author="Marcio de Carvalho" />
+          {posts.map(post => {
+            return (
+              <Post 
+                author={post.author}
+                content={post.content}
+                publishedAt={post.publishedAt}
+              />
+            )
+          })}
         </main>
       </div>
     </div>
